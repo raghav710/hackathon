@@ -3,8 +3,9 @@
 <head>
     <!--Change this based on the path where you have bootstrap-->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <script src="../js/site.js"></script>
 </head>
-
 <body>
     <div class="container-fluid">
     <!-- KEEP THIS SECTION IF YOU WANT A HEADER -->
@@ -20,6 +21,17 @@
     
 
     <!-- END OF HEADER SECTION -->
+
+    <!--This is an alert box. Change alert-success to alert-warning or alert-danger as required-->
+    <div id="alertBox" class="alert alert-dismissible alert-success" style="display:none">
+            <button type="button" class="close" onclick="closeAlert()">&times;(Hide the alert box)</button>
+            <span id="alertBoxMessage"></span>
+    </div>
+    <!--End of alert box SECTION-->
+    
+    <!--USE THIS BUTTON AS MANY TIMES AS YOU WANT-->
+    <button onclick="processButtonClick()" class="btn btn-primary">This will call the processButtonClick function in site.js</button>
+    <!--END OF BUTTON SECTION-->
 
     <!-- KEEP THIS SECTION IF YOU WANT A FORM -->
     <div class="row">
